@@ -1,0 +1,570 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* Colores */
+
+/* azul oscuro #222831
+gris oscuro #393E46
+marron claro #948979
+crema #DFD0B8 */
+
+
+/* Inter-Titulos - font-family: "Inter", sans-serif; */
+/* Raleway-Texto - font-family: "Raleway", sans-serif; */
+
+body{
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #222831;
+  padding: 15px 30px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  width: 90px;
+}
+
+/* Título */
+.titulo {
+  color: #DFD0B8;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;;
+}
+
+/* Menú */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #DFD0B8;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: brown;
+}
+
+
+footer {
+  background-color: #222831;
+  color: #DFD0B8;
+  padding: 30px;
+  font-size: 1.60em;
+  display: flex;
+  flex-wrap: wrap;          
+  justify-content: space-between;
+  gap: 20px;
+}
+
+
+footer > div {
+  flex: 1 1 200px;          
+}
+
+
+/* Lista redes */
+footer ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  padding: 0;
+}
+
+footer ul li img {
+  width: 80px;
+  transition: 0.3s;
+}
+
+footer ul li img:hover {
+  transform: scale(1.1);
+}
+
+/* Mapa ocupa toda la fila */
+footer address {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.map {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+}
+
+/* Main Index */
+
+.home {
+  padding: 40px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  background-color: #DFD0B8;
+}
+
+/* Sección general */
+.seccion-home {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Header del h2 */
+.seccion-header {
+  flex: 0 0 100%;
+}
+
+/* Título */
+.seccion-titulo {
+  font-size: 2em;
+  font-family: "Inter", sans-serif;
+}
+
+/* Contenido */
+.seccion-contenido {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Texto */
+.seccion-texto {
+  flex: 1;
+  line-height: 1.6;
+  font-size: 1.5em;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Imagen */
+.seccion-imagen {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Invertir solo la sección de pozos */
+.seccion-pozos .seccion-contenido {
+  flex-direction: row-reverse;
+}
+
+/* Alquileres */
+
+.listado {
+  padding: 50px 8%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 70px;
+  background-color: #DFD0B8;
+}
+
+/* Categoría */
+.categoria {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.categoria-titulo {
+  font-size: 2em;
+  font-family: "Inter", sans-serif;
+  border-left: 6px solid #222831;
+  padding-left: 15px;
+}
+
+/* Card */
+.propiedad-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.propiedad-titulo {
+  font-size: 1.4em;
+  font-family: "Inter", sans-serif;
+}
+
+/* Contenido horizontal */
+.propiedad-contenido {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Imagen */
+.propiedad-imagen {
+  width: 350px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.propiedad-imagen:hover {
+  transform: scale(1.03);
+}
+
+/* Texto */
+.propiedad-descripcion {
+  flex: 1;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+}
+
+
+
+/* Pozos */
+
+.proyecto-header {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #DFD0B8;
+}
+
+.proyecto-titulo {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+/* Contenedor Principal */
+.detalle-proyecto {
+  display: flex;
+  justify-content: center;   
+  padding: 80px 20px;        
+  background-color: #DFD0B8; 
+}
+
+.proyecto-seccion{
+  font-size: 1.25em;
+}
+/* Card */
+.proyecto-card {
+  width: 100%;
+  max-width: 1100px;        
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+}
+
+.proyecto-imagen{
+  width: 100%;
+}
+
+/* Imagenes de carousel */
+.proyecto-carousel-img {
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Carusel */
+
+#carouselProyecto {
+  margin-top: 20px;
+  max-width: 800px;
+}
+
+#carouselProyecto img {
+  height: 500px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* Oscurecer ligeramente para que el texto se vea mejor */
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  border-radius: 14px;
+}
+
+/* Texto centrado elegante */
+.carousel-caption {
+  bottom: 40%;
+}
+
+.carousel-caption h3 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 18px;
+}
+
+
+
+
+/* Contacto */
+
+/* Contenedor*/
+.contacto {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color:#DFD0B8 ;
+}
+
+.contacto-contenedor {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Formulario */
+.contacto-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #f5f5f5;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Labels */
+.contacto-label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Inputs */
+.contacto-input,
+.contacto-textarea {
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.contacto-input{
+  height: 35px;
+}
+
+
+/* Textarea */
+.contacto-textarea {
+  height: 80px;
+  resize: none; 
+}
+
+.contacto-input:focus,
+.contacto-textarea:focus {
+  outline: none;
+  border-color: #222831;
+  box-shadow: 0 0 5px rgba(34,40,49,0.3);
+}
+
+/* Boton */
+.contacto-boton {
+  background: #222831;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.contacto-boton:hover {
+  background: #393E46;
+}
+
+
+
+/*  Responsive Mobile */
+
+@media (max-width: 768px) {
+
+  /* Header */
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .titulo {
+    font-size: 20px;
+  }
+
+  /* Inicio */
+
+  .home {
+    padding: 30px 20px;
+    gap: 40px;
+  }
+
+  .seccion-contenido {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .seccion-texto {
+    font-size: 1.1em;
+  }
+
+  .seccion-imagen {
+    max-width: 100%;
+  }
+
+  /* Listas */
+
+  .listado {
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .propiedad-contenido {
+    flex-direction: column;
+  }
+
+  .propiedad-imagen {
+    width: 100%;
+    height: 200px;
+  }
+
+  /* Pozos */
+
+  .detalle-proyecto {
+    padding: 40px 15px;
+  }
+
+  .proyecto-card {
+    padding: 25px 20px;
+  }
+
+  .proyecto-titulo {
+    font-size: 24px;
+  }
+
+  .proyecto-seccion {
+    font-size: 1em;
+  }
+
+  .seccion-pozos .seccion-contenido {
+    flex-direction: column;
+  }
+
+  .proyecto-imagen-principal{
+    width: 100%;
+  }
+
+  /* Carrusel */
+
+  #carouselProyecto {
+    max-width: 100%;
+  }
+
+  #carouselProyecto img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .carousel-caption h3 {
+    font-size: 20px;
+  }
+
+  .carousel-caption p {
+    font-size: 14px;
+  }
+
+  /* Contacto */
+
+  .contacto {
+    padding: 40px 15px;
+  }
+
+  .contacto-formulario {
+    padding: 20px;
+  }
+
+  /* Footer */
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.2em;
+  }
+
+  footer ul {
+    justify-content: center;
+  }
+
+  footer ul li img {
+    width: 50px;
+  }
+
+  .map {
+    height: 200px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
