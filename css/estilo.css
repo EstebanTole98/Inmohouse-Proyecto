@@ -7,6 +7,7 @@
 body {
   font-family: "Raleway", sans-serif;
   overflow-x: hidden;
+  font-size: 20px;
 }
 
 .titulo {
@@ -101,7 +102,7 @@ footer .map {
   flex: 0 0 100%;
 }
 .home .seccion-home .seccion-header .seccion-titulo {
-  font-size: 2em;
+  font-size: 3em;
   font-family: "Raleway", sans-serif;
 }
 .home .seccion-home .seccion-contenido {
