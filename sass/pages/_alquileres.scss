@@ -1,0 +1,68 @@
+
+@use "../diseño/variables" as*;
+
+// Main
+
+
+.listado {
+  padding: 20px 8%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 70px;
+  background-color: $crema;
+
+  .categoria {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .categoria-titulo {
+      font-size: 2em;
+      font-family: $texto;
+      border-left: 6px solid $azulOscuro;
+      padding-left: 15px;
+    }
+  }
+
+
+  // Card
+
+
+  .propiedad-card {
+    background: $blanco;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px $grisOscuro;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+
+    .propiedad-titulo {
+      font-size: 1.4em;
+      font-family: $texto;
+    }
+    .propiedad-contenido {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+    .propiedad-imagen {
+      width: 350px;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .propiedad-imagen:hover {
+      transform: scale(1.03);
+    }
+    .propiedad-descripcion {
+  flex: 1;
+  font-family: $texto;
+  line-height: 1.6;
+}
+  }
+
+}

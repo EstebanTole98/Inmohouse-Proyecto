@@ -1,0 +1,75 @@
+@use "../diseño/variables" as*;
+
+// Contenedor Principal
+.detalle-proyecto {
+  @include flex;  
+  padding: 80px 20px;        
+  background-color: $crema;
+  width: 100%;
+  
+
+.proyecto-card {
+  width: 100%;
+  max-width: 1100px;        
+  background: $blanco;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+  margin: 60px auto;
+
+.proyecto-header {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: $crema;
+}
+.proyecto-titulo {
+  font-size: 34px;
+  font-weight: 600;
+}
+}
+.proyecto-seccion{
+  font-size: 1.25em;
+}
+.proyecto-imagen{
+  width: 100%;
+}
+}
+
+.proyecto-carousel-img {
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+// Carusel
+
+#carouselProyecto {
+  margin-top: 20px;
+  max-width: 800px;
+
+
+img {
+  height: 500px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  border-radius: 14px;
+}
+
+.carousel-caption {
+  bottom: 40%;
+}
+.carousel-caption h3 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.carousel-caption p {
+  font-size: 18px;
+}
+}

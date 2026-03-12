@@ -1,0 +1,75 @@
+
+@use "./variables" as*;
+
+//Header
+header {
+  background-color: $azulOscuro;
+  padding: 15px 30px;
+  .logo {
+    width: 90px;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    li {
+      a {
+        text-decoration: none;
+        color: $crema;
+        font-weight: 500;
+        transition: 0.3s;
+      }
+
+      a:hover {
+        color: $marronOscuro;
+      }
+    }
+  }
+}
+
+//Footer
+
+footer {
+  background-color: $azulOscuro;
+  color: $crema;
+  padding: 30px;
+  font-size: 1.6em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  div {
+    flex: 1 1 200px;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    padding: 0;
+    li {
+      img {
+        width: 80px;
+        transition: 0.3s;
+      }
+
+      img:hover {
+        transform: scale(1.1);
+      }
+    }
+    address {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  .map {
+    width: 100%;
+    height: 250px;
+    border-radius: 14px;
+  }
+}

@@ -1,0 +1,31 @@
+
+@use "./variables" as*;
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: $texto;
+  overflow-x: hidden;
+}
+
+
+.titulo {
+  color: $azulOscuro;
+  font-size: 70px;
+  font-family: $texto;
+  justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+.seccion-pozos .seccion-contenido {
+  flex-direction: row-reverse;
+}
+

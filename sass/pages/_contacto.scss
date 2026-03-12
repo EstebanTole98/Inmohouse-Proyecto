@@ -1,0 +1,60 @@
+
+@use "../diseño/variables" as*;
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: $crema;
+
+  .contacto-contenedor {
+    width: 100%;
+    max-width: 600px;
+    .contacto-formulario {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background: $blanco;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      .contacto-label {
+        font-weight: 600;
+        font-size: 14px;
+      }
+    }
+    .contacto-input {
+      height: 35px;
+      .contacto-textarea {
+        padding: 6px 8px;
+        border-radius: 8px;
+        border: 1px solid $grisOscuro;
+        font-size: 12px;
+        transition: 0.3s;
+        .contacto-textarea {
+          height: 80px;
+          resize: none;
+        }
+        .contacto-textarea:focus {
+          outline: none;
+          border-color: $marronOscuro;
+          box-shadow: 0 0 5px rgba(34, 40, 49, 0.3);
+        }
+      }
+      .contacto-boton {
+        background: $marronOscuro;
+        color: $blanco;
+        font-weight: bold;
+        cursor: pointer;
+        border: none;
+        margin-top: 10px;
+        padding: 12px;
+        border-radius: 8px;
+        transition: 0.3s;
+        .contacto-boton:hover {
+          background:$azulOscuro;
+        }
+      }
+    }
+  }
+}

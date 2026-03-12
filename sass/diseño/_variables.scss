@@ -1,0 +1,19 @@
+
+// Colores
+$azulOscuro: #222831;
+$grisOscuro: #393E46;
+$marronOscuro: #948979;
+$crema: #DFD0B8;
+$blanco: white;
+
+
+// Texto
+$texto:"Raleway", sans-serif;
+
+
+// Mixing
+@mixin flex{ 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

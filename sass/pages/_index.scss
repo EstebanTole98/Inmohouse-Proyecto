@@ -1,0 +1,90 @@
+@use "../diseño/variables" as*;
+
+
+.home {
+  padding: 40px 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  background-color: $crema;
+
+.seccion-home {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+.seccion-header {
+  flex: 0 0 100%;
+  .seccion-titulo {
+  font-size: 2em;
+  font-family: $texto;
+}
+}
+.seccion-contenido {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+.seccion-texto {
+  flex: 1;
+  line-height: 1.6;
+  font-size: 1.5em;
+  font-family: $texto;
+}
+
+.seccion-imagen {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+  gap: 30px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
